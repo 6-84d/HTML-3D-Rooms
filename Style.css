@@ -7,10 +7,12 @@ body,html
     overflow: hidden;
     display: flex;
     align-items: center;
+    perspective: 800px;
     justify-content: center;
 }
 
-.scene {
+.scene 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,16 +20,25 @@ body,html
     width: 100vw;
     transform: rotateX(0deg) rotateY(0deg) translateZ(-1099px);
     transform-style: preserve-3d;
-  }
+}
   
-  .room {
+.room 
+{
     height: 500px;
     width: 500px;
     border: solid 2px white;
     background-color: rgba(255, 255, 255, 0.459);
     transform-style: preserve-3d;
-  }
-  
-  .room1 {
-  
-  }
+}
+.room1, .floor
+{
+  height: 100%;
+  width: 70%;
+  background-color: antiquewhite;
+  transform: translateX(70%) rotateY(120deg);
+  background-image: url(./Pictures/Bricks.jpg);
+  transform-style: preserve-3d;
+  background-position: center;
+  background-repeat: repeat;
+  box-shadow:  60px black;
+} 
