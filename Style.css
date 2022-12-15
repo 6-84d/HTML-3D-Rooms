@@ -9,6 +9,7 @@ body,html
     align-items: center;
     perspective: 800px;
     justify-content: center;
+    background: url("./Pictures/cobblestone.png")
 }
 
 .scene 
@@ -24,8 +25,8 @@ body,html
   
 .room 
 {
-    height: 500px;
-    width: 500px;
+    height: 100px;
+    width: 100%;
     border: solid 2px white;
     background-color: rgba(255, 255, 255, 0.459);
     transform-style: preserve-3d;
@@ -33,7 +34,7 @@ body,html
 .room1, .floor
 {
   height: 100%;
-  width: 70%;
+  width: 50%;
   background-color: antiquewhite;
   transform: translateX(70%) rotateY(120deg);
   background-image: url(./Pictures/Bricks.jpg);
@@ -41,4 +42,63 @@ body,html
   background-position: center;
   background-repeat: repeat;
   box-shadow:  60px black;
+  margin-left: -50%;
 } 
+.Wall
+{
+    height: 100%;
+    width: 100%;
+    border: solid 2px white;
+    background-color: rgba(255, 255, 255, 0.459);
+    transform-style: preserve-3d;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+.leftWall, .left
+{
+    width: 100%;
+    height: 100%;
+    margin-left: -125%;
+    background-color: antiquewhite;
+    transform: translateX(70%) rotateY(-120deg);
+    background-image: url(./Pictures/Bricks.jpg);
+    transform-style: preserve-3d;
+    background-position: center;
+    background-repeat: repeat;
+    box-shadow:  60px black;
+}
+.BackWall
+{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    background-image: url(./Pictures/jungle_planks.png);
+    transform-style: preserve-3d;
+    background-repeat: repeat;
+    box-shadow:  60px black;
+}
+.Center
+{
+    height: 100%;
+    width: 34%;
+    border: solid 2px white;
+    background-color: rgba(255, 255, 255, 0.459);
+    transform-style: preserve-3d;
+    background-position: center;
+    background-repeat: repeat;
+    margin-top: 0%;
+    margin-left: 20%;
+}
+.Flower
+{
+    height: 70%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translateX(0%) rotateY(0deg);
+}
+.FlowerPosition
+{
+    height: 100%;
+    width: 100%;
+    background-image: url(./Pictures/pink_tulip.png);
+}
